@@ -4,7 +4,7 @@ use crate::settings::toml::deploy_target::RouteConfig;
 use crate::settings::toml::kv_namespace::KvNamespace;
 use crate::settings::toml::site::Site;
 
-#[derive(Clone, Debug, Deserialize, Serialize)]
+#[derive(Clone, Debug, Deserialize, PartialEq, Serialize)]
 pub struct Environment {
     pub name: Option<String>,
     pub account_id: Option<String>,
