@@ -2,6 +2,11 @@ use crate::settings::global_user::GlobalUser;
 use crate::terminal::{emoji, message};
 
 pub fn whoami(user: &GlobalUser) -> Result<(), failure::Error> {
+
+    let client = http::api_client(user, HttpApiClientConfig::default())?;
+    
+    
+
     // If using email + API key for auth, simply prints out email from config file.
     let email: String = match user {
         GlobalUser::GlobalKeyAuth { email, .. } => email.to_string(),
