@@ -13,7 +13,7 @@ build = "build.rs"
 [dependencies]
 anyhow = "1.0"
 atty = "0.2.14"
-backtrace = { version = "0.3.58" }
+backtrace = { version = "0.3.59" }
 base64 = "0.13.0"
 billboard = "0.1.0"
 binary-install = "0.0.3-alpha.1"
